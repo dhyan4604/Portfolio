@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Desai Dhyan</title>
+  <meta name="description" content="Project showcase of Desai Dhyan including AudioLoom and frontend implementation work." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Desai Dhyan home">
+        <img src="assets/logo-mark.svg" alt="Desai Dhyan logo" class="brand-logo" />
+        <span>Desai Dhyan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobile-drawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Project</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <a class="resume-btn" href="mailto:dhyand86@gmil.com">Contact</a>
+    </div>
+  </header>
+  <div class="drawer-backdrop" data-drawer-close></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span>Menu</span>
+      <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>X</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Project</a>
+      <a href="resume.html">Resume</a>
+      <a href="mailto:dhyand86@gmil.com">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="page-hero section reveal">
+      <p class="kicker">Projects</p>
+      <h1>AudioLoom: Full-stack MERN application case study.</h1>
+      <p class="hero-text">Built as an end-to-end production-style project with frontend UX, API-driven backend, and full user-to-order journey.</p>
+    </section>
+
+    <section class="projects section reveal">
+      <div class="project-grid">
+        <article class="project-card tilt">
+          <div class="project-tag">Live Project</div>
+          <h3>AudioLoom</h3>
+          <p>AudioLoom delivers authentication, product discovery, cart/checkout, order tracking, profile editing, and admin-facing product management in one connected app.</p>
+          <p class="project-meta">React + Node.js + Express.js + MongoDB | Deployed on Render</p>
+          <a href="https://audioloom.onrender.com" target="_blank" rel="noopener noreferrer">Open Live App</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Project Analysis</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Product Scope</h3>
+          <p>AudioLoom is a full-stack web application for browsing and purchasing audio products with complete account and order flow.</p>
+          <p>It was initially developed during my MERN internship at Pooja Infotech, Vadodara (January 2025 to April 2025), then expanded into a production-style portfolio project.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Key Features Implemented</h3>
+          <ul class="list-clean">
+            <li>User authentication: login/logout and token-based protected operations.</li>
+            <li>Password recovery flow with OTP verification and reset password handling.</li>
+            <li>Product listing, product detail view, and search capability.</li>
+            <li>Cart management, checkout flow, and order placement.</li>
+            <li>Profile management with profile image update support.</li>
+            <li>Dashboard/admin flow with product creation and product management actions.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <h3>API Integration Observed</h3>
+          <ul class="list-clean">
+            <li>`/api/products`, `/api/products/:id` for catalog and detail data.</li>
+            <li>`/api/orders` and `/api/summary` for order and dashboard data.</li>
+            <li>`/api/profile`, `/api/user`, `/api/users` for user account operations.</li>
+            <li>`/api/reset-password` for recovery and account access restoration.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <h3>Engineering Value</h3>
+          <p>This project demonstrates full-stack architecture thinking: frontend UX, secure account flow, backend route design, and deployment-ready integration in one system.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Desai Dhyan | Frontend Developer | Nadiad, Gujarat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

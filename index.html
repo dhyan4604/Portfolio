@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desai Dhyan | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Desai Dhyan, frontend developer specializing in responsive interfaces and modern web apps." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Desai Dhyan home">
+        <img src="assets/logo-mark.svg" alt="Desai Dhyan logo" class="brand-logo" />
+        <span>Dhyan Desai</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobile-drawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Project</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <a class="resume-btn" href="mailto:dhyand86@gmil.com">Contact</a>
+    </div>
+  </header>
+  <div class="drawer-backdrop" data-drawer-close></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span>Menu</span>
+      <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>X</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Project</a>
+      <a href="resume.html">Resume</a>
+      <a href="mailto:dhyand86@gmil.com">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="hero section reveal">
+      <p class="kicker">Frontend Developer</p>
+      <h1>I build full-stack MERN applications with clean frontend experience.</h1>
+      <p class="hero-text">
+        AudioLoom is my flagship full-stack project, combining React UI, Node/Express APIs, authentication, and complete e-commerce flow.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary magnet" href="https://audioloom.onrender.com" target="_blank" rel="noopener noreferrer">View Live Project</a>
+        <a class="btn ghost" href="resume.html">View Resume</a>
+      </div>
+      <div class="hero-metrics">
+        <article>
+          <span>8.28</span>
+          <p>CGPA (First Class with Distinction)</p>
+        </article>
+        <article>
+          <span>2025</span>
+          <p>B.E. Information Technology</p>
+        </article>
+        <article>
+          <span>01</span>
+          <p>Live Full-Stack Project (AudioLoom)</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section reveal">
+      <h2>Featured Project</h2>
+      <div class="project-grid">
+        <article class="project-card tilt">
+          <div class="project-tag">MERN Full Stack</div>
+          <h3>AudioLoom</h3>
+          <p>Full-stack audio electronics platform with product catalog, authentication, profile management, cart, checkout, and order tracking.</p>
+          <p class="project-meta">React, Node.js, Express.js, MongoDB, REST APIs</p>
+          <a href="projects.html">Read Case Study</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section reveal">
+      <h2>Let's work together</h2>
+      <p>Open to frontend development roles, freelance opportunities, and collaboration.</p>
+      <div class="quick-contact">
+        <a class="btn primary magnet" href="mailto:dhyand86@gmil.com">dhyand86@gmil.com</a>
+        <a class="btn ghost" href="tel:+919601141469">+91 9601141469</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>Dhyan Desai | Frontend Developer | Nadiad, Gujarat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
