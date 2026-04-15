@@ -17,7 +17,7 @@
     }
     .sheet { width: 100%; }
     .header {
-      border-bottom: 2px solid #0b5d70;
+      border-bottom: 2px solid #4f46e5;
       padding-bottom: 10px;
       margin-bottom: 12px;
     }
@@ -28,7 +28,7 @@
       color: #0f2233;
       margin: 0;
     }
-    .role { margin: 4px 0 8px; font-size: 13px; font-weight: 600; color: #0b5d70; }
+    .role { margin: 4px 0 8px; font-size: 13px; font-weight: 600; color: #4f46e5; }
     .contact { color: #3f4a56; font-size: 10.5px; }
     .grid {
       display: grid;
@@ -42,7 +42,7 @@
       font-size: 12.5px;
       letter-spacing: 0.7px;
       color: #0f2233;
-      border-left: 4px solid #0b5d70;
+      border-left: 4px solid #4f46e5;
       padding-left: 8px;
       text-transform: uppercase;
     }
@@ -55,7 +55,7 @@
       background: #fbfdff;
     }
     .title { margin: 0; font-size: 11.8px; font-weight: 700; color: #102131; }
-    .meta { margin: 2px 0 6px; color: #0b5d70; font-weight: 600; font-size: 10px; }
+    .meta { margin: 2px 0 6px; color: #4f46e5; font-weight: 600; font-size: 10px; }
     p { margin: 0 0 6px; }
     ul { margin: 0; padding-left: 16px; }
     li { margin-bottom: 4px; }
@@ -85,7 +85,7 @@
       <h1 class="name">Desai Dhyan</h1>
       <div class="role">Frontend Developer (MERN)</div>
       <div class="contact">
-        Email: dhyand86@gmil.com | Phone: +91 9601141469 | Location: Nadiad, Gujarat<br />
+        Email: dhyand86@gmail.com | Phone: +91 9601141469 | Location: Nadiad, Gujarat<br />
         Live Project: <a href="https://audioloom.onrender.com">https://audioloom.onrender.com</a>
       </div>
     </header>
@@ -144,6 +144,21 @@
         </section>
 
         <section class="section">
+          <h2>Video Editing & Content</h2>
+          <div class="card">
+            <p class="title">YouTube & Reels Video Editing</p>
+            <p class="meta">Short-form + long-form edits</p>
+            <p>Comfortable editing social-first videos with clean pacing, captions, and export formats optimized for platforms.</p>
+            <ul>
+              <li>Hook-focused pacing, cuts, and timeline cleanup.</li>
+              <li>Captions/subtitles, basic motion/text overlays, and transitions.</li>
+              <li>Audio balance, music syncing, and final export presets.</li>
+            </ul>
+            <p><strong>Tools:</strong> VN, CapCut, CapCut AI features.</p>
+          </div>
+        </section>
+
+        <section class="section">
           <h2>Project Highlight</h2>
           <div class="card">
             <p class="title">AudioLoom</p>
@@ -167,7 +182,7 @@
         <section class="section">
           <h2>Contact</h2>
           <div class="card">
-            <p><strong>Email:</strong> dhyand86@gmil.com</p>
+            <p><strong>Email:</strong> dhyand86@gmail.com</p>
             <p><strong>Phone:</strong> +91 9601141469</p>
             <p><strong>Location:</strong> Nadiad, Gujarat</p>
           </div>
@@ -180,6 +195,7 @@
             <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span><span class="chip">REST API</span>
             <span class="chip">Basic PHP</span><span class="chip">Figma to HTML</span><span class="chip">Responsive Design</span>
             <span class="chip">Git</span><span class="chip">Postman</span><span class="chip">Deployment (Render)</span>
+            <span class="chip">Video Editing (YouTube/Reels)</span><span class="chip">VN</span><span class="chip">CapCut</span><span class="chip">CapCut AI</span>
           </div>
         </section>
 
@@ -212,5 +228,12 @@
 
     <div class="footer">Desai Dhyan | Frontend Developer | Nadiad, Gujarat</div>
   </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('print') === '1') {
+      window.addEventListener('load', () => window.print());
+    }
+  </script>
 </body>
 </html>

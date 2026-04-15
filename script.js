@@ -36,6 +36,8 @@ tiltCards.forEach((card) => {
 });
 
 const magnets = document.querySelectorAll('.magnet');
+const rootStyles = getComputedStyle(document.documentElement);
+const magnetGlow = rootStyles.getPropertyValue('--glow-strong').trim() || 'rgba(6, 182, 212, 0.45)';
 
 magnets.forEach((button) => {
   button.addEventListener('mousemove', (event) => {
@@ -44,7 +46,7 @@ magnets.forEach((button) => {
     const y = event.clientY - rect.top - rect.height / 2;
 
     button.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-    button.style.boxShadow = '0 12px 28px rgba(39, 224, 195, 0.4)';
+    button.style.boxShadow = `0 12px 28px ${magnetGlow}`;
   });
 
   button.addEventListener('mouseleave', () => {

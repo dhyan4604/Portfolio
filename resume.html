@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-resume">
   <div class="noise"></div>
   <header class="site-header">
     <div class="nav-shell">
@@ -28,7 +28,7 @@
         <a href="projects.html">Project</a>
         <a href="resume.html">Resume</a>
       </nav>
-      <a class="resume-btn" href="mailto:dhyand86@gmil.com">Contact</a>
+      <a class="resume-btn" href="mailto:dhyand86@gmail.com">Contact</a>
     </div>
   </header>
   <div class="drawer-backdrop" data-drawer-close></div>
@@ -42,23 +42,29 @@
       <a href="about.html">About</a>
       <a href="projects.html">Project</a>
       <a href="resume.html">Resume</a>
-      <a href="mailto:dhyand86@gmil.com">Contact</a>
+      <a href="mailto:dhyand86@gmail.com">Contact</a>
     </nav>
   </aside>
 
   <main>
-    <section class="page-hero section reveal">
+    <section class="page-hero section">
       <p class="kicker">Resume</p>
       <h1>Desai Dhyan</h1>
       <p class="hero-text">Frontend Developer with strong skills in modern UI development, responsive design, and Figma-to-HTML implementation.</p>
+      <p class="resume-contact-line">
+        <a href="mailto:dhyand86@gmail.com">dhyand86@gmail.com</a> ·
+        <a href="tel:+919601141469">+91 9601141469</a> ·
+        Nadiad, Gujarat ·
+        <a href="https://audioloom.onrender.com" target="_blank" rel="noopener noreferrer">audioloom.onrender.com</a>
+      </p>
       <div class="hero-actions">
-        <a class="btn primary magnet" href="resume.pdf" download="Desai_Dhyan_Resume.pdf">Download CV</a>
-        <a class="btn primary magnet" href="mailto:dhyand86@gmil.com">Email Me</a>
+        <a class="btn primary magnet" href="resume-print.html?print=1" target="_blank" rel="noopener noreferrer">Download / Print</a>
+        <a class="btn primary magnet" href="mailto:dhyand86@gmail.com">Email Me</a>
         <a class="btn ghost" href="tel:+919601141469">Call: +91 9601141469</a>
       </div>
     </section>
 
-    <section class="section reveal resume-layout">
+    <section class="section resume-layout">
       <div class="resume-main">
         <article class="timeline-item">
           <h3>Professional Summary</h3>
@@ -113,13 +119,26 @@
             <li>Completed practical projects focused on modern web development and deployment.</li>
           </ul>
         </article>
+
+        <h2>Video Editing & Content</h2>
+        <article class="timeline-item">
+          <h3>YouTube & Reels Video Editing</h3>
+          <p class="timeline-meta">Short-form + long-form edits</p>
+          <p>Comfortable editing social-first videos with clean pacing, captions, and export formats optimized for platforms.</p>
+          <ul class="list-clean">
+            <li>Hook-focused pacing, cuts, and timeline cleanup.</li>
+            <li>Captions/subtitles, basic motion/text overlays, and transitions.</li>
+            <li>Audio balance, music syncing, and final export presets.</li>
+          </ul>
+          <p><strong>Tools:</strong> VN, CapCut, CapCut AI features.</p>
+        </article>
       </div>
 
       <aside class="resume-side">
         <article class="timeline-item">
           <h3>Contact</h3>
           <ul class="list-clean">
-            <li><strong>Email:</strong> dhyand86@gmil.com</li>
+            <li><strong>Email:</strong> dhyand86@gmail.com</li>
             <li><strong>Phone:</strong> +91 9601141469</li>
             <li><strong>Location:</strong> Nadiad, Gujarat</li>
           </ul>
@@ -142,6 +161,10 @@
             <span>Git</span>
             <span>Postman</span>
             <span>Deployment (Render)</span>
+            <span>Video Editing (YouTube/Reels)</span>
+            <span>VN</span>
+            <span>CapCut</span>
+            <span>CapCut AI</span>
           </div>
         </article>
 
@@ -168,7 +191,7 @@
       </aside>
     </section>
 
-    <section class="section reveal">
+    <section class="section">
       <h2>Project Highlight</h2>
       <article class="timeline-item">
         <h3>AudioLoom</h3>
