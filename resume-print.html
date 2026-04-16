@@ -232,7 +232,30 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     if (params.get('print') === '1') {
-      window.addEventListener('load', () => window.print());
+      const returnUrl = 'resume.html';
+      let printStarted = false;
+
+      function returnToSite() {
+        if (!printStarted) return;
+        try {
+          if (window.opener && !window.opener.closed) {
+            window.opener.location.href = returnUrl;
+            window.opener.focus();
+            window.close();
+            return;
+          }
+        } catch (_) {}
+
+        window.location.href = returnUrl;
+      }
+
+      window.addEventListener('afterprint', returnToSite);
+      window.addEventListener('focus', returnToSite);
+
+      window.addEventListener('load', () => {
+        printStarted = true;
+        window.print();
+      });
     }
   </script>
 </body>
