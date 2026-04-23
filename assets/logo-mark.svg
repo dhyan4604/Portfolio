@@ -3,15 +3,15 @@
   <desc id="desc">Rounded square gradient mark with stylized D monogram.</desc>
   <defs>
     <linearGradient id="bg" x1="20" y1="16" x2="236" y2="240" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7c3aed"/>
-      <stop offset="1" stop-color="#06b6d4"/>
+      <stop offset="0" stop-color="#e11d48"/>
+      <stop offset="1" stop-color="#f43f5e"/>
     </linearGradient>
     <linearGradient id="ink" x1="84" y1="60" x2="190" y2="198" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#05060d"/>
-      <stop offset="1" stop-color="#0b1020"/>
+      <stop offset="0" stop-color="#0b0b0d"/>
+      <stop offset="1" stop-color="#151519"/>
     </linearGradient>
   </defs>
   <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#bg)"/>
   <path fill="url(#ink)" d="M78 58h44c33 0 58 25 58 58s-25 58-58 58H78V58zm36 34v48h8c13 0 24-10 24-24s-11-24-24-24h-8z"/>
-  <circle cx="190" cy="196" r="18" fill="#22c55e"/>
+  <circle cx="190" cy="196" r="18" fill="#f43f5e"/>
 </svg>
