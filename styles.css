@@ -255,39 +255,39 @@ nav a:hover,
   margin-top: 5.5rem;
 }
 
-html.js .hero > *,
-html.js .page-hero > * {
+html.js .hero>*,
+html.js .page-hero>* {
   opacity: 0;
   transform: translateY(16px);
 }
 
-html.js.is-ready .hero > *,
-html.js.is-ready .page-hero > * {
+html.js.is-ready .hero>*,
+html.js.is-ready .page-hero>* {
   animation: intro-up 720ms var(--ease-out) both;
 }
 
-html.js.is-ready .hero > *:nth-child(1),
-html.js.is-ready .page-hero > *:nth-child(1) {
+html.js.is-ready .hero>*:nth-child(1),
+html.js.is-ready .page-hero>*:nth-child(1) {
   animation-delay: 40ms;
 }
 
-html.js.is-ready .hero > *:nth-child(2),
-html.js.is-ready .page-hero > *:nth-child(2) {
+html.js.is-ready .hero>*:nth-child(2),
+html.js.is-ready .page-hero>*:nth-child(2) {
   animation-delay: 120ms;
 }
 
-html.js.is-ready .hero > *:nth-child(3),
-html.js.is-ready .page-hero > *:nth-child(3) {
+html.js.is-ready .hero>*:nth-child(3),
+html.js.is-ready .page-hero>*:nth-child(3) {
   animation-delay: 200ms;
 }
 
-html.js.is-ready .hero > *:nth-child(4),
-html.js.is-ready .page-hero > *:nth-child(4) {
+html.js.is-ready .hero>*:nth-child(4),
+html.js.is-ready .page-hero>*:nth-child(4) {
   animation-delay: 280ms;
 }
 
-html.js.is-ready .hero > *:nth-child(5),
-html.js.is-ready .page-hero > *:nth-child(5) {
+html.js.is-ready .hero>*:nth-child(5),
+html.js.is-ready .page-hero>*:nth-child(5) {
   animation-delay: 360ms;
 }
 
@@ -815,7 +815,7 @@ html.js .reveal.in-view {
   margin-top: 0.6rem;
 }
 
-.current-focus .timeline-item + .timeline-item {
+.current-focus .timeline-item+.timeline-item {
   margin-top: 1rem;
 }
 
@@ -932,22 +932,52 @@ nav a.active::after {
   display: none;
 }
 
+.project-tabs {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 180ms var(--ease-out), background-color 180ms var(--ease-out), transform 180ms var(--ease-out);
+}
+
+.project-tab:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.project-tab.is-active {
+  border-color: rgba(216, 180, 254, 0.7);
+  background: rgba(216, 180, 254, 0.12);
+}
+
 @media (max-width: 720px) {
+
   .split-grid,
   .resume-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .split-hero {
     grid-template-columns: 1fr;
-   
+
     gap: 1.5rem;
   }
-  
+
   .split-hero .hero-photo {
     order: -1;
   }
-  
+
   .split-hero .hero-photo img {
     width: 220px;
     height: 220px;
@@ -955,7 +985,7 @@ nav a.active::after {
     margin: 0 auto;
     display: block;
   }
-  
+
   .split-hero .hero-text {
     margin-left: auto;
     margin-right: auto;
@@ -963,6 +993,7 @@ nav a.active::after {
 }
 
 @media (max-width: 1024px) {
+
   .main-nav,
   .resume-btn {
     display: none;
@@ -995,6 +1026,7 @@ nav a.active::after {
     opacity: 0;
     transform: translateY(16px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1006,6 +1038,7 @@ nav a.active::after {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1032,8 +1065,8 @@ nav a.active::after {
   }
 
   html.js .nav-shell,
-  html.js .hero > *,
-  html.js .page-hero > * {
+  html.js .hero>*,
+  html.js .page-hero>* {
     opacity: 1;
     transform: none;
   }

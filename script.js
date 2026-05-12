@@ -59,3 +59,33 @@ document.addEventListener('keydown', (event) => {
     closeDrawer();
   }
 });
+
+const projectTabsRoot = document.querySelector('[data-project-tabs]');
+
+if (projectTabsRoot) {
+  const tabs = Array.from(projectTabsRoot.querySelectorAll('[data-project-target]'));
+  const panels = Array.from(document.querySelectorAll('[data-project-panel]'));
+
+  function activateProjectTab(target) {
+    tabs.forEach((tab) => {
+      const isActive = tab.dataset.projectTarget === target;
+      tab.classList.toggle('is-active', isActive);
+      tab.setAttribute('aria-selected', String(isActive));
+    });
+
+    panels.forEach((panel) => {
+      const shouldShow = panel.dataset.projectPanel === target;
+      if (shouldShow) {
+        panel.removeAttribute('hidden');
+      } else {
+        panel.setAttribute('hidden', '');
+      }
+    });
+  }
+
+  projectTabsRoot.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-project-target]');
+    if (!button) return;
+    activateProjectTab(button.dataset.projectTarget);
+  });
+}
