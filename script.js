@@ -89,3 +89,39 @@ if (projectTabsRoot) {
     activateProjectTab(button.dataset.projectTarget);
   });
 }
+
+// =========================================
+// UNIVERSAL ANIMATIONS (MOBILE + DESKTOP)
+// =========================================
+
+if (!prefersReducedMotion) {
+
+  // 1. Neon Shockwave on Touch/Click (Works everywhere)
+  document.addEventListener('click', (e) => {
+    const ripple = document.createElement('div');
+    ripple.className = 'neon-shockwave';
+    ripple.style.left = `${e.clientX}px`;
+    ripple.style.top = `${e.clientY}px`;
+    document.body.appendChild(ripple);
+    
+    setTimeout(() => ripple.remove(), 600);
+  });
+
+  // 2. 3D Card Tilt with Mobile Gyroscope Support
+  const tiltScript = document.createElement('script');
+  tiltScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js';
+  tiltScript.onload = () => {
+    VanillaTilt.init(document.querySelectorAll(".project-card, .panel"), {
+      max: 5,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.1,
+      gyroscope: true, // Tilts based on phone orientation!
+      gyroscopeMinAngleX: -45,
+      gyroscopeMaxAngleX: 45,
+      gyroscopeMinAngleY: -45,
+      gyroscopeMaxAngleY: 45,
+    });
+  };
+  document.head.appendChild(tiltScript);
+}
